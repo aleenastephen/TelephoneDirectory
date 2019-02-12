@@ -1,6 +1,7 @@
 package com.mca.administrator.contactapp;
 
 import android.content.Intent;
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +9,8 @@ import android.widget.Button;
 
 public class MainLogin extends AppCompatActivity {
 Button b1,b2,b3;
+String s1,s2,s3;
+    DbHelper contact;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,6 +18,8 @@ Button b1,b2,b3;
         b1=(Button)findViewById(R.id.sl);
         b2=(Button)findViewById(R.id.al);
         b3=(Button)findViewById(R.id.reg);
+        contact=new DbHelper(this);
+        contact.getWritableDatabase();
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
