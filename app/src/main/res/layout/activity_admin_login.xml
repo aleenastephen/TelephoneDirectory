@@ -1,11 +1,11 @@
 <ScrollView android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:background="#0089bb"
+    android:background="@drawable/loginbutton"
     xmlns:android="http://schemas.android.com/apk/res/android">
 <LinearLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="#0089bb"
+    android:background="@drawable/loginbutton"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView
         android:layout_width="match_parent"
@@ -30,7 +30,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="LOGIN"
-        android:id="@+id/adlogin"/>
+        android:id="@+id/adlogin"
+        android:background="@drawable/button"
+        android:layout_margin="80dp"/>
 
 </LinearLayout>
 </ScrollView>

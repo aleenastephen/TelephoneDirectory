@@ -3,4 +3,9 @@
     <color name="startcolor">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="copper">#757F9A</color>
+    <color name="copper2">#D7DDE8</color>
+    <color name="buttonstyle">#2C3E50</color>
+    <color name="buttonstyle1">#4CA1AF</color>
+
 </resources>

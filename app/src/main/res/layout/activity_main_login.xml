@@ -1,28 +1,38 @@
 <ScrollView android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:background="#0089bb"
+    android:background="@drawable/loginbutton"
     xmlns:android="http://schemas.android.com/apk/res/android">
 <LinearLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="#0089bb"
+    android:background="@drawable/loginbutton"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <Button
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Student Login"
-        android:id="@+id/sl"/>
+        android:id="@+id/sl"
+        android:background="@drawable/button"
+        />
     <Button
+        android:layout_margin="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/al"
         android:text="Admin Login"
+        android:background="@drawable/button"
         />
     <Button
+        android:layout_margin="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Register"
-        android:id="@+id/reg"/>
+        android:id="@+id/reg"
+        android:background="@drawable/button"/>
 
 </LinearLayout>
 </ScrollView>
