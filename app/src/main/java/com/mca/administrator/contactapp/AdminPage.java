@@ -24,6 +24,12 @@ String s1,s2,s3;
                 startActivity(i);
             }
         });
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               // Intent i=new Intent(getApplicationContext(),)
+            }
+        });
 
     }
 }

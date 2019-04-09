@@ -2,22 +2,27 @@
     android:layout_width="match_parent"
     android:background="@drawable/loginbutton"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <GridLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content">
+
+
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/loginbutton"
+        xmlns:android="http://schemas.android.com/apk/res/android">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
         <EditText
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="25dp"
             android:layout_marginLeft="15dp"
             android:layout_marginBottom="20dp"
             android:layout_marginRight="15dp"
+            android:width="250dp"
+            android:height="100dp"
             android:ellipsize="start"
             android:gravity="center"
-            android:hint="search text"
+            android:hint="Search Name"
             android:inputType="text"
             android:background="@drawable/edittextstyle"
             android:layout_width="match_parent"
@@ -27,11 +32,55 @@
             />
         <ImageView
 
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
-            android:src="@drawable/search"/>/>
-</GridLayout>
+            android:src="@drawable/search"
+            android:id="@+id/img"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="email"
+            android:id="@+id/temail"
+            android:visibility="gone"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tem"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mob"
+            android:id="@+id/tmob"
+            android:visibility="gone"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tmo"
+            android:visibility="gone"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPDATE"
+            android:id="@+id/supdate"
+            android:background="@drawable/button"
+            android:layout_margin="80dp"
+            android:visibility="gone"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DELETE"
+            android:id="@+id/sdelete"
+            android:background="@drawable/button"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
 </ScrollView>
+

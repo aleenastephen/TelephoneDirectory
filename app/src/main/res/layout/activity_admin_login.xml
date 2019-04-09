@@ -33,6 +33,14 @@
         android:id="@+id/adlogin"
         android:background="@drawable/button"
         android:layout_margin="80dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGOUT"
+        android:id="@+id/adlogout"
+        android:background="@drawable/button"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"/>
 
 </LinearLayout>
 </ScrollView>
