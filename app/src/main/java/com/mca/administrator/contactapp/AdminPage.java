@@ -6,10 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class AdminPage extends AppCompatActivity {
 Button b1,b2,b3;
-String s1,s2,s3;
+String s1,s2,s3,getid;
+DbHelper contact;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,9 +29,12 @@ String s1,s2,s3;
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               // Intent i=new Intent(getApplicationContext(),)
+
+                Intent j=new Intent(getApplicationContext(),SearchActivity.class);
+                startActivity(j);
             }
         });
+
 
     }
 }

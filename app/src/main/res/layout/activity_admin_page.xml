@@ -28,7 +28,7 @@
 
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="EDIT CONTACT"
+            android:text="VIEW CONTACT"
             android:layout_marginTop="15dp"
             android:layout_marginLeft="125dp"
             android:layout_marginRight="15dp"
@@ -38,7 +38,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="DRO CONTACT"
+            android:text="VIEW THE USERS"
             android:layout_marginLeft="125dp"
             android:layout_marginTop="15dp"
             android:id="@+id/dc"

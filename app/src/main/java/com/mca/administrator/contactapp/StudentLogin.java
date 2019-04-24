@@ -1,6 +1,7 @@
 package com.mca.administrator.contactapp;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -21,15 +22,16 @@ String s1,s2;
         ed2=(EditText)findViewById(R.id.psw);
         b=(Button)findViewById(R.id.stdlogin);
 
+
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                s1=ed1.getText().toString();
-                s2=ed2.getText().toString();
-                Intent i=new Intent(getApplicationContext(),SearchActivity.class);
+
+                Intent i=new Intent(getApplicationContext(),StudentSearch.class);
                 startActivity(i);
             }
         });
+
     }
 
 }

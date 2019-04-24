@@ -27,7 +27,7 @@
             android:background="@drawable/edittextstyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/search"
+            android:id="@+id/ssearch"
 
             />
         <ImageView
@@ -38,93 +38,51 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:src="@drawable/search"
-            android:id="@+id/img"/>
+            android:id="@+id/simg"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Name"
-            android:id="@+id/tnam"
+            android:id="@+id/snam"
             android:visibility="gone"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/tna"
+            android:id="@+id/sna"
             android:visibility="gone"/>
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="email"
-            android:id="@+id/temail"
+            android:id="@+id/semail"
             android:visibility="gone"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/tem"
+            android:id="@+id/sem"
             android:visibility="gone"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Mob"
-            android:id="@+id/tmob"
+            android:id="@+id/smob"
             android:visibility="gone"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/tmo"
+            android:id="@+id/smo"
             android:visibility="gone"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Regname"
-            android:id="@+id/treg"
-            android:visibility="gone"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tre"
-            android:visibility="gone"/>
+        <Button
 
-        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Password"
-            android:id="@+id/tpas"
-            android:visibility="gone"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tpa"
-            android:visibility="gone"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Confirm Password"
-            android:id="@+id/tcpass"
-            android:visibility="gone"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tcpa"
-            android:visibility="gone"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="UPDATE"
-            android:id="@+id/supdate"
+            android:text="LOGOUT"
+            android:id="@+id/stdlogout"
             android:background="@drawable/button"
-            android:layout_margin="80dp"
-            android:visibility="gone"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="DELETE"
-            android:id="@+id/sdelete"
-            android:background="@drawable/button"
+            android:layout_marginTop="50dp"
             android:layout_marginLeft="80dp"
             android:layout_marginRight="80dp"
             android:visibility="gone"/>
-
 
     </LinearLayout>
 </ScrollView>
