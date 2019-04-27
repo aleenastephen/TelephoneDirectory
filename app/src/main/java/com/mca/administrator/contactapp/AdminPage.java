@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class AdminPage extends AppCompatActivity {
 Button b1,b2,b3;
-String s1,s2,s3,getid;
+//String s1,s2,s3,getid;
 DbHelper contact;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

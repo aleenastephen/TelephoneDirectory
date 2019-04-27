@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class AdminLogin extends AppCompatActivity {
 EditText ed1,ed2;
-Button b,b1;
+Button b;
 String s1,s2;
 String username="admin",pswd="admin";
     @Override
@@ -36,15 +36,6 @@ String username="admin",pswd="admin";
                 }
             }
         });
-        b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                SharedPreferences.Editor obj=getSharedPreferences("LOGOUT",MODE_PRIVATE).edit();
-                obj.clear();
-                obj.apply();
-                Intent j=new Intent(getApplicationContext(),MainLogin.class);
-                startActivity(j);
-            }
-        });
+
     }
 }

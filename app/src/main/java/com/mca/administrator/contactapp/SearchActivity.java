@@ -1,6 +1,8 @@
 package com.mca.administrator.contactapp;
 
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.net.Uri;
 import android.support.v7.app.AlertDialog;
@@ -22,7 +24,7 @@ public class SearchActivity extends AppCompatActivity {
     ImageView i;
     EditText e,e1,e2,e0,a1,a2,a3;
     String s,s1,s2,s0,s3,s4,s5,u1,u2,u3,u4,u5,u6,getid;
-    Button b1,b2;
+    Button b1,b2,b3;
     TextView t1,t2,t0,t3,t4,t5;
     DbHelper p;
     AlertDialog.Builder build;
@@ -55,6 +57,7 @@ public class SearchActivity extends AppCompatActivity {
 
         b1=(Button) findViewById(R.id.supdate);
         b2=(Button) findViewById(R.id.sdelete);
+        b3=(Button)findViewById(R.id.adlogout);
 
         build=new AlertDialog.Builder(this);
         build.setTitle("Confirm");
@@ -157,6 +160,16 @@ public class SearchActivity extends AppCompatActivity {
             public void onClick(View view) {
                 AlertDialog alert=build.create();
                 alert.show();
+            }
+        });
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedPreferences.Editor obj=getSharedPreferences("LOGOUT",MODE_PRIVATE).edit();
+                obj.clear();
+                obj.apply();
+                Intent j=new Intent(getApplicationContext(),MainLogin.class);
+                startActivity(j);
             }
         });
     }
