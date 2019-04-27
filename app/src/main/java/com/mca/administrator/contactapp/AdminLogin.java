@@ -1,6 +1,7 @@
 package com.mca.administrator.contactapp;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +11,7 @@ import android.widget.Toast;
 
 public class AdminLogin extends AppCompatActivity {
 EditText ed1,ed2;
-Button b;
+Button b,b1;
 String s1,s2;
 String username="admin",pswd="admin";
     @Override
@@ -33,6 +34,16 @@ String username="admin",pswd="admin";
                 else {
                     Toast.makeText(getApplicationContext(), "You are not Authorized",Toast.LENGTH_LONG).show();
                 }
+            }
+        });
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedPreferences.Editor obj=getSharedPreferences("LOGOUT",MODE_PRIVATE).edit();
+                obj.clear();
+                obj.apply();
+                Intent j=new Intent(getApplicationContext(),MainLogin.class);
+                startActivity(j);
             }
         });
     }

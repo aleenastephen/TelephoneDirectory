@@ -76,7 +76,7 @@ public class SearchActivity extends AppCompatActivity {
         build.setNegativeButton("No", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                Toast.makeText(getApplicationContext(),"Not clicked",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Not deleted",Toast.LENGTH_LONG).show();
                 dialogInterface.dismiss();
             }
         });
